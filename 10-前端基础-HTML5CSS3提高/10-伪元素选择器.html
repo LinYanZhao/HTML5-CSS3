@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        div::before {
+            /* 这个content是必须要写的 */
+            /* 必须加引号 */
+            display: inline-block;
+            content: '我';
+            width: 30px;
+            height: 40px;
+            background-color: purple;
+        }
+
+        div::after {
+            /* 必须加引号 */
+            content: '帅哥';
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div>
+    是
+</div>
+
+</html>
